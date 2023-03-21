@@ -4,13 +4,13 @@ import { Cursor, useTypewriter } from 'react-simple-typewriter'
 import BackgroundCircles from './BackgroundCircles'
 import { motion } from 'framer-motion'
 import { PageInfo } from '@/typings'
-import { urlFor } from '@/sanity'
+import { urlFor } from '@/lib/sanity'
 
 type Props = {
   pageInfo: PageInfo
 }
 
-const Hero = ({pageInfo}: Props) => {
+const Hero = ({ pageInfo }: Props) => {
   const [text] = useTypewriter({
     words: [
       `Hi, I'm ${pageInfo?.name}`,

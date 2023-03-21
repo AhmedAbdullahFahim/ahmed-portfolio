@@ -1,13 +1,13 @@
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { PageInfo } from '@/typings'
-import { urlFor } from '@/sanity'
+import { urlFor } from '@/lib/sanity'
 
 type Props = {
   pageInfo: PageInfo
 }
 
-const About = ({pageInfo}: Props) => {
+const About = ({ pageInfo }: Props) => {
   return (
     <motion.div
       className='h-screen flex flex-col items-center justify-evenly relative text-center max-w-7xl px-10 mx-auto md:text-left md:flex-row'

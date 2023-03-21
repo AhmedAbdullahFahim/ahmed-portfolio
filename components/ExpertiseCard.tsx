@@ -1,4 +1,4 @@
-import { urlFor } from '@/sanity'
+import { urlFor } from '@/lib/sanity'
 import { Expertise } from '@/typings'
 import { motion } from 'framer-motion'
 
@@ -6,7 +6,7 @@ type Props = {
   item: Expertise
 }
 
-const ExpertiseCard = ({item}: Props) => {
+const ExpertiseCard = ({ item }: Props) => {
   return (
     <article className='flex flex-col items-center space-y-7 xl:space-y-3 flex-shrink-0 max-h-[515px] max-w-[350px] sm:max-w-[450px] md:max-w-[350px] lg:max-w-[451px] bg-[#2d2d2d] p-10 md:px-0 lg:p-7 lg:pb-12 lg:pt-10 xl:pb-8 xl:pt-5 hover:scale-105  transition transform duration-200 overflow-hidden rounded-sm shadow-md  hover:shadow-gray-900 hover:shadow-lg'>
       <motion.img
@@ -22,9 +22,7 @@ const ExpertiseCard = ({item}: Props) => {
         <h4 className='text-xl font-medium tracking-widest sm:text-2xl text-gray-100 md:tracking-wide lg:tracking-widest xl:text-3xl xl:tracking-normal'>
           {item?.expertiseTitle}
         </h4>
-        <p className='tracking-wider text-gray-300'>
-          {item?.expertiseInfo}
-        </p>
+        <p className='tracking-wider text-gray-300'>{item?.expertiseInfo}</p>
       </div>
     </article>
   )

@@ -1,4 +1,4 @@
-import { urlFor } from '@/sanity'
+import { urlFor } from '@/lib/sanity'
 import { Skill } from '@/typings'
 import { motion } from 'framer-motion'
 
