@@ -15,15 +15,14 @@ import { GetStaticProps } from 'next'
 import Head from 'next/head'
 
 type Props = {
-  // pageInfo: PageInfo
-  // expertise: Expertise[]
-  // skills: Skill[]
-  // projects: Project[]
-  // socials: Social[]
+  pageInfo: PageInfo
+  expertise: Expertise[]
+  skills: Skill[]
+  projects: Project[]
+  socials: Social[]
 }
 
-// export default function Home({pageInfo, expertise, skills, projects, socials}: Props) {
-export default function Home({}: Props) {
+export default function Home({pageInfo, expertise, skills, projects, socials}: Props) {
   return (
     <div className='bg-[#242424] text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-gray-400'>
       <Head>
@@ -32,21 +31,21 @@ export default function Home({}: Props) {
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <link rel='icon' href='/logo-dark.png' />
       </Head>
-      {/* <Header socials={socials} cv={pageInfo.linkToCV} /> */}
+      <Header socials={socials} cv={pageInfo.linkToCV} />
       <section id='hero' className='snap-start'>
-        {/* <Hero pageInfo={pageInfo} /> */}
+        <Hero pageInfo={pageInfo} />
       </section>
       <section id='about' className='snap-center'>
-        {/* <About pageInfo={pageInfo} /> */}
+        <About pageInfo={pageInfo} />
       </section>
       <section id='expertise' className='snap-start'>
-        {/* <Expert expertise={expertise} expertiseDesc={pageInfo.expertiseDesc} /> */}
+        <Expert expertise={expertise} expertiseDesc={pageInfo.expertiseDesc} />
       </section>
       <section id='skills' className='snap-start'>
-        {/* <Skills skills={skills} /> */}
+        <Skills skills={skills} />
       </section>
       <section id='projects' className='snap-start'>
-        {/* <Projects projects={projects} /> */}
+        <Projects projects={projects} />
       </section>
       <section id='contact' className='snap-start'>
         <Contact />
@@ -55,21 +54,21 @@ export default function Home({}: Props) {
   )
 }
 
-// export const getStaticProps: GetStaticProps<Props> = async () => {
-//   const pageInfo: PageInfo = await fetchPageInfo()
-//   const expertise: Expertise[] = await fetchExpertise()
-//   const projects: Project[] = await fetchProjects()
-//   const socials: Social[] = await fetchSocials()
-//   const skills: Skill[] = await fetchSkills()
+export const getStaticProps: GetStaticProps<Props> = async () => {
+  const pageInfo: PageInfo = await fetchPageInfo()
+  const expertise: Expertise[] = await fetchExpertise()
+  const projects: Project[] = await fetchProjects()
+  const socials: Social[] = await fetchSocials()
+  const skills: Skill[] = await fetchSkills()
 
-//   return {
-//     props: {
-//       pageInfo,
-//       expertise,
-//       projects,
-//       socials,
-//       skills,
-//     },
-//     revalidate: 10,
-//   }
-// }
+  return {
+    props: {
+      pageInfo,
+      expertise,
+      projects,
+      socials,
+      skills,
+    },
+    revalidate: 10,
+  }
+}
