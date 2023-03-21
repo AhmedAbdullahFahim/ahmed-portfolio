@@ -54,21 +54,21 @@ export default function Home({pageInfo, expertise, skills, projects, socials}: P
   )
 }
 
-// export const getStaticProps: GetStaticProps<Props> = async () => {
-//   const pageInfo: PageInfo = await fetchPageInfo()
-//   const expertise: Expertise[] = await fetchExpertise()
-//   const projects: Project[] = await fetchProjects()
-//   const socials: Social[] = await fetchSocials()
-//   const skills: Skill[] = await fetchSkills()
+export const getStaticProps: GetStaticProps<Props> = async () => {
+  const pageInfo: PageInfo = await fetchPageInfo()
+  const expertise: Expertise[] = await fetchExpertise()
+  const projects: Project[] = await fetchProjects()
+  const socials: Social[] = await fetchSocials()
+  const skills: Skill[] = await fetchSkills()
 
-//   return {
-//     props: {
-//       pageInfo,
-//       expertise,
-//       projects,
-//       socials,
-//       skills,
-//     },
-//     revalidate: 10,
-//   }
-// }
+  return {
+    props: {
+      pageInfo,
+      expertise,
+      projects,
+      socials,
+      skills,
+    },
+    revalidate: 10,
+  }
+}
