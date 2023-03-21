@@ -1,7 +1,6 @@
 import { Skill } from '@/typings'
 import { motion } from 'framer-motion'
 import SinlgeSkill from './Skill'
-import { useState } from 'react'
 
 type Props = {
   skills: Skill[]
