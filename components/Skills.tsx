@@ -17,9 +17,7 @@ const SinlgeSkills = ({}: Props) => {
       className='flex relative flex-col text-center md:text-left xl:flex-row max-w-[2000px] xl:px-10 min-h-screen justify-center xl:space-y-0 mx-auto items-center sm:pb-10 md:pb-0'
     >
       <h3 className='title'>Skills</h3>
-      <p className='absolute top-28 text-lg text-gray-300 tracking-widest font-light italic mt-7 md:mt-2 lg:mt-3 px-3 xl:left-20 xl:top-32 xll:left-24 xll:ml-4'>
-        What I can do
-      </p>
+
       <div className='space-y-5 px-5'>
         <div className='grid grid-cols-2 md:grid-cols-4 gap-5 mt-44 md:mt-32 lg:mt-36'>
           {firstSkills.map((skill, index) => (
