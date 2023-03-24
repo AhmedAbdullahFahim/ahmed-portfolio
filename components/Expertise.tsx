@@ -1,13 +1,10 @@
 import ExpertiseCard from './ExpertiseCard'
 import { motion } from 'framer-motion'
-import { Expertise } from '@/typings'
+import { expertise } from '../data/expertise'
 
-type Props = {
-  expertise: Expertise[],
-  expertiseDesc: string
-}
+type Props = {}
 
-const Expert = ({expertise, expertiseDesc}: Props) => {
+const Expert = ({}: Props) => {
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -17,10 +14,13 @@ const Expert = ({expertise, expertiseDesc}: Props) => {
     >
       <h3 className='title'>Expertise</h3>
       <p className='absolute top-28 text-sm lg:text-base xl:text-lg text-gray-300 tracking-wider sm:tracking-widest font-light italic mt-5 md:mt-7 px-3'>
-        {expertiseDesc}
+        I am eager to take on new challenges and use my expertise to contribute
+        to successful projects.
       </p>
       <div className='w-full items-center mx-auto p-10 justify-evenly mt-36 flex flex-col md:flex-row md:space-x-7 lg:space-x-12 xl:space-x-0 space-y-10 md:space-y-0'>
-        {expertise.map((item) => <ExpertiseCard key={item._id} item={item} />)}
+        {expertise.map((item, index) => (
+          <ExpertiseCard key={index} item={item} />
+        ))}
       </div>
     </motion.div>
   )

@@ -2,14 +2,12 @@ import { SocialIcon } from 'react-social-icons'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import { Social } from '@/typings'
+import { socials } from '../data/header'
+import { cv } from '../data/header'
 
-type Props = {
-  socials: Social[],
-  cv: string
-}
+type Props = {}
 
-const Header = ({ socials, cv }: Props) => {
+const Header = ({}: Props) => {
   const router = useRouter()
   return (
     <header className='sticky top-0 z-20 flex items-start justify-between p-5 mx-auto max-w-7xl xl:items-center'>
@@ -29,9 +27,9 @@ const Header = ({ socials, cv }: Props) => {
           duration: 1.3,
         }}
       >
-        {socials.map((social) => (
+        {socials.map((social, index) => (
           <SocialIcon
-            key={social._id}
+            key={index}
             url={social.url}
             fgColor='gray'
             bgColor='transparent'

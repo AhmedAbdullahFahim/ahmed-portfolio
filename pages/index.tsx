@@ -5,24 +5,25 @@ import Header from '@/components/Header'
 import Hero from '@/components/Hero'
 import Projects from '@/components/Projects'
 import Skills from '@/components/Skills'
-import { Expertise, PageInfo, Project, Skill, Social } from '@/typings'
-import { fetchExpertise } from '@/utils/fetchExpertise'
-import { fetchPageInfo } from '@/utils/fetchPageInfo'
-import { fetchProjects } from '@/utils/fetchProjects'
-import { fetchSkills } from '@/utils/fetchSkills'
-import { fetchSocials } from '@/utils/fetchSocials'
-import { GetStaticProps } from 'next'
+// import { Expertise, PageInfo, Project, Skill, Social } from '@/typings'
+// import { fetchExpertise } from '@/utils/fetchExpertise'
+// import { fetchPageInfo } from '@/utils/fetchPageInfo'
+// import { fetchProjects } from '@/utils/fetchProjects'
+// import { fetchSkills } from '@/utils/fetchSkills'
+// import { fetchSocials } from '@/utils/fetchSocials'
+// import { GetStaticProps } from 'next'
 import Head from 'next/head'
 
 type Props = {
-  pageInfo: PageInfo
-  expertise: Expertise[]
-  skills: Skill[]
-  projects: Project[]
-  socials: Social[]
+  // pageInfo: PageInfo
+  // expertise: Expertise[]
+  // skills: Skill[]
+  // projects: Project[]
+  // socials: Social[]
 }
 
-export default function Home({pageInfo, expertise, skills, projects, socials}: Props) {
+// export default function Home({pageInfo, expertise, skills, projects, socials}: Props) {
+export default function Home({}: Props) {
   return (
     <div className='bg-[#242424] text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-gray-400'>
       <Head>
@@ -31,21 +32,21 @@ export default function Home({pageInfo, expertise, skills, projects, socials}: P
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <link rel='icon' href='/logo-dark.png' />
       </Head>
-      <Header socials={socials} cv={pageInfo.linkToCV} />
+      <Header />
       <section id='hero' className='snap-start'>
-        <Hero pageInfo={pageInfo} />
+        <Hero />
       </section>
       <section id='about' className='snap-center'>
-        <About pageInfo={pageInfo} />
+        <About />
       </section>
       <section id='expertise' className='snap-start'>
-        <Expert expertise={expertise} expertiseDesc={pageInfo.expertiseDesc} />
+        <Expert />
       </section>
       <section id='skills' className='snap-start'>
-        <Skills skills={skills} />
+        <Skills />
       </section>
       <section id='projects' className='snap-start'>
-        <Projects projects={projects} />
+        <Projects />
       </section>
       <section id='contact' className='snap-start'>
         <Contact />
@@ -54,21 +55,21 @@ export default function Home({pageInfo, expertise, skills, projects, socials}: P
   )
 }
 
-export const getStaticProps: GetStaticProps<Props> = async () => {
-  const pageInfo: PageInfo = await fetchPageInfo()
-  const expertise: Expertise[] = await fetchExpertise()
-  const projects: Project[] = await fetchProjects()
-  const socials: Social[] = await fetchSocials()
-  const skills: Skill[] = await fetchSkills()
+// export const getStaticProps: GetStaticProps<Props> = async () => {
+//   const projects: Project[] = await fetchProjects()
+//   const skills: Skill[] = await fetchSkills()
+//   const expertise: Expertise[] = await fetchExpertise()
+//   const pageInfo: PageInfo = await fetchPageInfo()
+//   const socials: Social[] = await fetchSocials()
 
-  return {
-    props: {
-      pageInfo,
-      expertise,
-      projects,
-      socials,
-      skills,
-    },
-    revalidate: 10,
-  }
-}
+//   return {
+//     props: {
+//       projects,
+//       skills,
+//       expertise,
+//       pageInfo,
+//       socials
+//     },
+//     revalidate: 10,
+//   }
+// }

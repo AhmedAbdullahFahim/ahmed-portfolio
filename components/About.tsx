@@ -1,13 +1,10 @@
 import Image from 'next/image'
 import { motion } from 'framer-motion'
-import { PageInfo } from '@/typings'
-import { urlFor } from '@/lib/sanity'
+import { about } from '../data/about'
 
-type Props = {
-  pageInfo: PageInfo
-}
+type Props = {}
 
-const About = ({ pageInfo }: Props) => {
+const About = ({}: Props) => {
   return (
     <motion.div
       className='h-screen flex flex-col items-center justify-evenly relative text-center max-w-7xl px-10 mx-auto md:text-left md:flex-row'
@@ -24,7 +21,7 @@ const About = ({ pageInfo }: Props) => {
         transition={{ duration: 1.3 }}
       >
         <Image
-          src={urlFor(pageInfo?.profilePic).url()}
+          src={about.image}
           width={600}
           height={600}
           alt=''
@@ -37,7 +34,7 @@ const About = ({ pageInfo }: Props) => {
           background
         </h4>
         <p className='text-sm lg:text-base xl:text-lg text-gray-300 tracking-wide sm:tracking-wider'>
-          {pageInfo?.backgroundInfo}
+          {about.bgInfo}
         </p>
       </div>
     </motion.div>

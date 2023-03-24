@@ -3,17 +3,14 @@ import Link from 'next/link'
 import { Cursor, useTypewriter } from 'react-simple-typewriter'
 import BackgroundCircles from './BackgroundCircles'
 import { motion } from 'framer-motion'
-import { PageInfo } from '@/typings'
-import { urlFor } from '@/lib/sanity'
+import { hero } from '../data/hero'
 
-type Props = {
-  pageInfo: PageInfo
-}
+type Props = {}
 
-const Hero = ({ pageInfo }: Props) => {
+const Hero = ({}: Props) => {
   const [text] = useTypewriter({
     words: [
-      `Hi, I'm ${pageInfo?.name}`,
+      'Hi, I am Ahmed',
       'I am a Frontend Web Developer',
       'Specialized in React & Next.js',
     ],
@@ -28,7 +25,7 @@ const Hero = ({ pageInfo }: Props) => {
     >
       <BackgroundCircles />
       <Image
-        src={urlFor(pageInfo?.heroImage).url()}
+        src={hero.heroImage}
         className='object-cover h-36 w-36 rounded-full'
         alt=''
         width={144}
@@ -36,7 +33,7 @@ const Hero = ({ pageInfo }: Props) => {
       />
       <div className='z-20'>
         <h2 className='text-sm uppercase text-gray-500 sm:tracking-[15px] pb-2 tracking-[12px]'>
-          {pageInfo.role}
+          {hero.role}
         </h2>
         <h1 className='text-3xl sm:text-4xl md:text-5xl font-semi px-10'>
           <span className='mr-3 '>{text}</span>

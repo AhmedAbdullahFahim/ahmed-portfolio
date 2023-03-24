@@ -1,12 +1,18 @@
-import { urlFor } from '@/lib/sanity'
-import { Project } from '@/typings'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { AiFillGithub } from 'react-icons/ai'
 import { BsBoxArrowUpRight } from 'react-icons/bs'
 
 type Props = {
-  project: Project
+  project: {
+    linkToBuild: string
+    linkToCode: string
+    summary: string
+    technologies: string[]
+    technologiesMobile: string
+    image: string
+    title: string
+  }
 }
 
 const Project = ({ project }: Props) => {
@@ -25,7 +31,7 @@ const Project = ({ project }: Props) => {
         className='shadow-sm shadow-black mb-20 sm:mt-20 sm:mb-5 group hover:shadow-none'
       >
         <img
-          src={urlFor(project?.image).url()}
+          src={project.image}
           alt=''
           className='h-full object-fill sm:h-64 sm:rounded-t-sm transition transform duration-150 group-hover:scale-105
         '
