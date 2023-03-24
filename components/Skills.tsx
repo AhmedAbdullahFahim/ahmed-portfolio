@@ -1,11 +1,10 @@
 import { motion } from 'framer-motion'
 import SinlgeSkill from './Skill'
-import {skills} from '../data/skills'
+import { skills } from '../data/skills'
 
 type Props = {}
 
 const SinlgeSkills = ({}: Props) => {
-
   const firstSkills = skills.slice(0, 8)
   const secondSkills = skills.slice(8, 14)
   const thirdSkills = skills.slice(14, 18)
@@ -24,12 +23,12 @@ const SinlgeSkills = ({}: Props) => {
       <div className='space-y-5 px-5'>
         <div className='grid grid-cols-2 md:grid-cols-4 gap-5 mt-44 md:mt-32 lg:mt-36'>
           {firstSkills.map((skill, index) => (
-            <SinlgeSkill key={index} skill={skill} directionTop />
+            <SinlgeSkill key={index} skill={skill} />
           ))}
         </div>
         <div className='grid grid-cols-2 sm:grid-cols-3 gap-5'>
           {secondSkills.map((skill, index) => (
-            <SinlgeSkill key={index} skill={skill} directionTop />
+            <SinlgeSkill key={index} skill={skill} />
           ))}
         </div>
         <div className='grid grid-cols-2 gap-5'>
