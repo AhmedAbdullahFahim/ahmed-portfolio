@@ -40,7 +40,7 @@ export const projects = [
   },
   {
     title: 'Google Clone',
-    image: '/projects/google.webp',
+    image: '/projects/igoogle.webp',
     linkToBuild: 'https://google-clone-six-theta.vercel.app/',
     linkToCode: 'https://github.com/AhmedAbdullahFahim/google-clone',
     summary:

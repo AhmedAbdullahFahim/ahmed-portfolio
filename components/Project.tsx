@@ -28,15 +28,15 @@ const Project = ({ project }: Props) => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 1.3 }}
-        className='shadow-sm shadow-black mb-20 sm:mt-20 sm:mb-5 group hover:shadow-none'
+        className='shadow-sm shadow-black mb-20 sm:mt-20 sm:mb-5 group hover:shadow-none mt-20'
       >
         <img
           src={project.image}
           alt=''
-          className='h-full object-fill sm:h-64 sm:rounded-t-sm transition transform duration-150 group-hover:scale-105
+          className='h-full object-fill sm:h-64 sm:rounded-t-sm transition transform duration-150 sm:group-hover:scale-105
         '
         />
-        <div className='flex items-center justify-evenly space-x-20 w-full px-5 py-3 bg-[#242424] font-light rounded-b-sm transition transform duration-150 group-hover:scale-105'>
+        <div className='flex items-center justify-evenly space-x-20 w-full px-5 py-3 bg-[#242424] font-light rounded-b-sm transition transform duration-150 sm:group-hover:scale-105'>
           <Link
             href={project?.linkToCode}
             target='_blank'
@@ -66,8 +66,8 @@ const Project = ({ project }: Props) => {
       <article className='hidden absolute right-6 xl:right-24 bottom-28 lg:flex flex-col space-y-5 p-5 overflow-hidden rounded-sm shadow-sm hover:shadow-md hover:shadow-black shadow-black transition-transform backdrop-filter backdrop-blur-lg duration-100 hover:scale-110 bg-[#242424] bg-opacity-30'>
         <p className='font-medium text-lg'>Used Technologies</p>
         <ol className='pointer-events-none tracking-wider space-y-1 text-gray-300'>
-          {project?.technologies?.map((tool) => (
-            <li>{tool}</li>
+          {project?.technologies?.map((tool, index) => (
+            <li key={index}>{tool}</li>
           ))}
         </ol>
       </article>
