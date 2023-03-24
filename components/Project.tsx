@@ -21,14 +21,14 @@ const Project = ({ project }: Props) => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className='w-screen h-screen flex flex-col snap-center flex-shrink-0 justify-center items-center px-0 space-y-0 relative pb-5'
+      className='w-screen h-screen flex flex-col snap-center flex-shrink-0 justify-center items-center px-0 space-y-0 relative'
     >
       <motion.div
         initial={{ opacity: 0, y: -200 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 1.3 }}
-        className='shadow-sm shadow-black mb-20 sm:mt-20 sm:mb-5 group hover:shadow-none mt-20'
+        className='shadow-sm shadow-black mb-20 sm:mt-20 sm:mb-5 group hover:shadow-none'
       >
         <img
           src={project.image}
@@ -58,8 +58,8 @@ const Project = ({ project }: Props) => {
       <h4 className='text-3xl lg:text-4xl text-gray-100 tracking-widest sm:mt-10 mb-5 pb-10 sm:pb-5'>
         {project?.title}
       </h4>
-      <p className='projectDesc'>{project?.summary}</p>
-      <p className='projectDesc lg:hidden '>
+      <p className='projectDesc text-sm sm:text-base'>{project?.summary}</p>
+      <p className='projectDesc lg:hidden text-sm sm:text-base'>
         <span className='font-medium'>Used Tools: </span>{' '}
         {project?.technologiesMobile}.
       </p>
