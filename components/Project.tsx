@@ -60,7 +60,7 @@ const Project = ({ project }: Props) => {
       </h4>
       <p className='projectDesc text-sm sm:text-base'>{project?.summary}</p>
       <p className='projectDesc lg:hidden text-sm sm:text-base'>
-        <span className='font-medium'>Used Tools: </span>{' '}
+        <span className='font-medium'><br />Used Tools: </span>{' '}
         {project?.technologiesMobile}.
       </p>
       <article className='hidden absolute right-6 xl:right-24 bottom-28 lg:flex flex-col space-y-5 p-5 overflow-hidden rounded-sm shadow-sm hover:shadow-md hover:shadow-black shadow-black transition-transform backdrop-filter backdrop-blur-lg duration-100 hover:scale-110 bg-[#242424] bg-opacity-30'>
