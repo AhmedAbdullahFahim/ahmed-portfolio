@@ -21,7 +21,7 @@ const Project = ({ project }: Props) => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className='w-screen h-screen flex flex-col snap-center flex-shrink-0 justify-center items-center px-0 space-y-0 relative'
+      className='w-screen h-screen flex flex-col snap-center flex-shrink-0 justify-center items-center px-0 space-y-0 relative pb-5'
     >
       <motion.div
         initial={{ opacity: 0, y: -200 }}
