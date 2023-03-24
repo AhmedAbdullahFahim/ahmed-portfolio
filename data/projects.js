@@ -1,7 +1,7 @@
 export const projects = [
   {
     title: 'Instagram Clone',
-    image: '/projects/instagram.png',
+    image: '/projects/instagram.webp',
     linkToBuild: 'https://instagram-clone-woad-kappa.vercel.app/',
     linkToCode: 'https://instagram-clone-woad-kappa.vercel.app/',
     summary:
@@ -20,7 +20,7 @@ export const projects = [
   },
   {
     title: 'Whatsapp Clone',
-    image: '/projects/whatsapp.png',
+    image: '/projects/whatsapp.webp',
     linkToBuild: 'https://whatsapp-clone-three-sigma.vercel.app/',
     linkToCode: 'https://github.com/AhmedAbdullahFahim/whatsapp-clone',
     summary:
@@ -40,7 +40,7 @@ export const projects = [
   },
   {
     title: 'Google Clone',
-    image: '/projects/google.png',
+    image: '/projects/google.webp',
     linkToBuild: 'https://google-clone-six-theta.vercel.app/',
     linkToCode: 'https://github.com/AhmedAbdullahFahim/google-clone',
     summary:
@@ -58,7 +58,7 @@ export const projects = [
   },
   {
     title: 'Facebook Clone',
-    image: '/projects/facebook.png',
+    image: '/projects/facebook.webp',
     linkToBuild: 'https://facebook-clone-sandy-seven.vercel.app/',
     linkToCode: 'https://github.com/AhmedAbdullahFahim/facebook-clone',
     summary:
@@ -76,7 +76,7 @@ export const projects = [
   },
   {
     title: 'Hulu Clone',
-    image: '/projects/hulu.png',
+    image: '/projects/hulu.webp',
     linkToBuild: 'https://hulu-clone-beta-mocha.vercel.app/',
     linkToCode: 'https://github.com/AhmedAbdullahFahim/hulu-clone',
     summary:
@@ -86,7 +86,7 @@ export const projects = [
   },
   {
     title: 'Medium Clone',
-    image: '/projects/medium.png',
+    image: '/projects/medium.webp',
     linkToBuild: 'https://medium-clone-sanity-delta.vercel.app/',
     linkToCode: 'https://github.com/AhmedAbdullahFahim/medium-clone-sanity',
     summary:
