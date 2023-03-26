@@ -10,13 +10,13 @@
     @apply absolute top-24 text-gray-400 tracking-[20px] uppercase text-2xl;
   }
   .projectDesc {
-    @apply text-lg text-center md:text-left max-w-4xl px-5 sm:px-10 lg:px-40 xl:px-28 tracking-wide text-gray-200 font-light 
+    @apply text-lg text-center md:text-left max-w-4xl px-5 sm:px-10 lg:px-40 xl:px-28 tracking-wide text-gray-200 font-light;
   }
   .projectBtn {
-    @apply flex items-center justify-between  hover:text-gray-300 transition-all duration-150 cursor-pointer;
+    @apply flex items-center justify-between  hover:text-gray-300 transition-all duration-150 cursor-pointer text-xs sm:text-base;
   }
   .contactDetail {
-    @apply flex items-center justify-center space-x-5 text-lg sm:text-2xl
+    @apply flex items-center justify-center space-x-5 text-lg sm:text-2xl;
   }
   .contactInput {
     @apply outline-none bg-slate-400/20 rounded-sm border-b pl-5 pr-10 py-4 border-[#242424] text-gray-500 placeholder-gray-400 transition-all focus:border-[#F7AB0A]/40 focus:text-gray-200 hover:border-[#F7AB0A]/40;
