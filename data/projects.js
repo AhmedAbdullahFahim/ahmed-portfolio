@@ -1,11 +1,12 @@
 export const projects = [
   {
     title: 'Instagram Clone',
-    image: '/projects/instagram.webp',
+    image: '/projects/instagram.png',
+    mobileImage: '/projects/instagram-mobile.png',
     linkToBuild: 'https://instagram-clone-woad-kappa.vercel.app/',
     linkToCode: 'https://instagram-clone-woad-kappa.vercel.app/',
     summary:
-      'Instagram clone where users can sign in using their Google accounts, upload posts with image upload functionality included, view, delete, like and comment on shared ones and see who liked them',
+      'Instagram clone where users can sign in using their Google accounts, upload, view, delete, like and comment on shared posts and see who liked them',
     technologies: [
       'JavaScript',
       'Next.js',
@@ -20,11 +21,12 @@ export const projects = [
   },
   {
     title: 'Whatsapp Clone',
-    image: '/projects/whatsapp.webp',
+    image: '/projects/whatsapp.png',
+    mobileImage: '/projects/whatsapp-mobile.png',
     linkToBuild: 'https://whatsapp-clone-three-sigma.vercel.app/',
     linkToCode: 'https://github.com/AhmedAbdullahFahim/whatsapp-clone',
     summary:
-      'Whatsapp clone, a one-to-one messaging application that registers users using their Google accounts and lets them enter the emails of the people they want to chat with, if the recipient email registers they can see and continue the chat.',
+      'One-to-one messaging application that registers users using their Google accounts and lets them enter the emails of the people they want to chat with.',
     technologies: [
       'JavaScript',
       'Next.js',
@@ -40,7 +42,8 @@ export const projects = [
   },
   {
     title: 'Google Clone',
-    image: '/projects/igoogle.webp',
+    image: '/projects/google.png',
+    mobileImage: '/projects/google-mobile.png',
     linkToBuild: 'https://google-clone-six-theta.vercel.app/',
     linkToCode: 'https://github.com/AhmedAbdullahFahim/google-clone',
     summary:
@@ -58,7 +61,8 @@ export const projects = [
   },
   {
     title: 'Facebook Clone',
-    image: '/projects/facebook.webp',
+    image: '/projects/facebook.png',
+    mobileImage: '/projects/facebook-mobile.png',
     linkToBuild: 'https://facebook-clone-sandy-seven.vercel.app/',
     linkToCode: 'https://github.com/AhmedAbdullahFahim/facebook-clone',
     summary:
@@ -76,7 +80,8 @@ export const projects = [
   },
   {
     title: 'Hulu Clone',
-    image: '/projects/hulu.webp',
+    image: '/projects/hulu.png',
+    mobileImage: '/projects/hulu-mobile.png',
     linkToBuild: 'https://hulu-clone-beta-mocha.vercel.app/',
     linkToCode: 'https://github.com/AhmedAbdullahFahim/hulu-clone',
     summary:
@@ -86,11 +91,12 @@ export const projects = [
   },
   {
     title: 'Medium Clone',
-    image: '/projects/medium.webp',
+    image: '/projects/medium.png',
+    mobileImage: '/projects/medium-mobile.png',
     linkToBuild: 'https://medium-clone-sanity-delta.vercel.app/',
     linkToCode: 'https://github.com/AhmedAbdullahFahim/medium-clone-sanity',
     summary:
-      'Blog where authors can register using their own Google accounts, comment and review shared posts and comments and share new posts with image upload functionality included.',
+      'Blog where authors can register using their own Google accounts, comment and review shared posts and comments and share new posts.',
     technologies: [
       'TypeScript',
       'Next.js',
