@@ -38,7 +38,7 @@ export const projects = [
       '1-1 Messaging',
     ],
     technologiesMobile:
-      'Javascript, Next.js, Styled Components, Firebase, FirebaseAuth, Material UI, SSR, 1-1 Messaging',
+      'Javascript, Next.js, Styled Components, Firebase, SSR, 1-1 Messaging',
   },
   {
     title: 'Google Clone',
@@ -66,7 +66,7 @@ export const projects = [
     linkToBuild: 'https://facebook-clone-sandy-seven.vercel.app/',
     linkToCode: 'https://github.com/AhmedAbdullahFahim/facebook-clone',
     summary:
-      'Facebook clone where users can sign in using their own facebook accounts, see published posts and upload new ones with image upload functionality included.',
+      'Facebook clone where users can sign in using their own facebook accounts, see published posts and upload new ones.',
     technologies: [
       'JavaScript',
       'Next.js',
