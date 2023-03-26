@@ -10,7 +10,7 @@ type Props = {
 
 const ExpertiseCard = ({ item }: Props) => {
   return (
-    <article className='flex flex-col items-center space-y-7 xl:space-y-3 flex-shrink-0 min-h-content sm:max-h-[510px] min-w-[300px] max-w-[370px] sm:max-w-[450px] md:max-w-[350px] lg:max-w-[451px] bg-[#2d2d2d] p-10 md:px-0 lg:p-7 lg:pb-12 lg:pt-10 xl:pb-8 xl:pt-5 hover:scale-105  transition transform duration-200 overflow-hidden rounded-sm shadow-md  hover:shadow-gray-900 hover:shadow-lg'>
+    <article className='flex flex-col items-center space-y-7 xl:space-y-3 flex-shrink-0 min-h-content sm:max-h-[500px] min-w-[300px] max-w-[370px] sm:max-w-[450px] md:max-w-[350px] lg:max-w-[451px] bg-[#2d2d2d] p-10 md:px-0 lg:p-7 lg:pb-12 lg:pt-10 xl:pb-8 xl:pt-5 hover:scale-105  transition transform duration-200 overflow-hidden rounded-sm shadow-md  hover:shadow-gray-900 hover:shadow-lg'>
       <motion.img
         src={item.expImg}
         alt=''
