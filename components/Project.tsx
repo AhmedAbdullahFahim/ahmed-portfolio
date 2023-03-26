@@ -22,14 +22,14 @@ const Project = ({ project }: Props) => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className='w-screen h-[97vh] flex flex-col snap-center flex-shrink-0 justify-center items-center px-0 space-y-0 relative'
+      className='w-screen h-[97vh] sm:h-screen flex flex-col snap-center flex-shrink-0 justify-center items-center px-0 space-y-0 relative'
     >
       <motion.div
         initial={{ opacity: 0, y: -200 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 1.3 }}
-        className='mb-20 sm:mt-20 sm:mb-5 group hover:shadow-none'
+        className='mb-10 sm:mt-20 sm:mb-5 group hover:shadow-none'
       >
         <div className='flex items-center justify-center transition transform duration-150 sm:hover:scale-105'>
           <img
