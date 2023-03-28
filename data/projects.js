@@ -3,8 +3,8 @@ export const projects = [
     title: 'Instagram Clone',
     image: '/projects/instagram.png',
     mobileImage: '/projects/instagram-mobile.png',
-    linkToBuild: 'https://instagram-clone-woad-kappa.vercel.app/',
-    linkToCode: 'https://instagram-clone-woad-kappa.vercel.app/',
+    linkToBuild: 'https://storied-snickerdoodle-4d5650.netlify.app/',
+    linkToCode: 'https://github.com/AhmedAbdullahFahim/instagram-clone',
     summary:
       'Instagram clone where users can sign in using their Google accounts, upload, view, delete, like and comment on shared posts and see who liked them',
     technologies: [
@@ -44,7 +44,7 @@ export const projects = [
     title: 'Google Clone',
     image: '/projects/google.png',
     mobileImage: '/projects/google-mobile.png',
-    linkToBuild: 'https://google-clone-six-theta.vercel.app/',
+    linkToBuild: 'https://classy-sorbet-79d7a6.netlify.app/',
     linkToCode: 'https://github.com/AhmedAbdullahFahim/google-clone',
     summary:
       'Google Search clone where users can insert a search term in the search box and get the search results divided into different pages.',
