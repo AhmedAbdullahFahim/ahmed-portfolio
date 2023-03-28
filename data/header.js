@@ -7,4 +7,4 @@ export const socials = [
   },
 ]
 export const cv =
-  'https://drive.google.com/file/d/1Ucqy-xJzIO4DLDnJrWqZIOIWNhk7fR25/view?usp=share_link'
+  'https://drive.google.com/file/d/1DSXFRwPAanuhXf9EA8tWR_j5-5sXGyOR/view?usp=share_link'
