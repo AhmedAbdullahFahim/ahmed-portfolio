@@ -30,7 +30,7 @@ const About = ({}: Props) => {
       </motion.div>
       <div className='space-y-10 px-0 md:px-10'>
         <h4 className='text-2xl lg:text-3xl xl:text-4xl font-semibold tracking-wide md:tracking-wider text-gray-200'>
-          Here is a <span className='italic text-gray-400'>little</span>{' '}
+          Here is a <span className='text-gray-400'>little</span>{' '}
           background
         </h4>
         <p className='text-sm lg:text-base xl:text-lg text-gray-300 tracking-wide sm:tracking-wider'>

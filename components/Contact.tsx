@@ -24,7 +24,7 @@ const Contact = (props: Props) => {
         <div className='space-y-10'>
           <div className='contactDetail mr-9'>
             <BsPhoneFill size={25} className='text-gray-400' />
-            <p className=''>+20106253799</p>
+            <p className=''>+20 106 253 799</p>
           </div>
           <div className='contactDetail '>
             <FaEnvelope size={25} className='text-gray-400' />

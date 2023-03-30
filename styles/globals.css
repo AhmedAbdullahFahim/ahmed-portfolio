@@ -28,3 +28,9 @@
     @apply cursor-default;
   }
 }
+
+@layer utilities {
+  .scrollbar-thin::-webkit-scrollbar {
+    height: 10px;
+  }
+}
